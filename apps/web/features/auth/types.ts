@@ -9,3 +9,13 @@ export type SignInResponseType = CommonResponse<{
   accessToken: string;
   refreshToken: string;
 }>
+
+export type UserType = {
+  id: string;
+  name: string;
+  email: string;
+  hashedRefreshToken: string;
+  role: string;
+  createdAt: string;
+  updatedAt: string;
+}
