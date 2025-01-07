@@ -10,9 +10,9 @@ import {
 import { User } from '@prisma/client';
 import { Response } from 'express';
 
+import { Public } from '../../common/decorators/public-decorator';
 import { CreateUserDto } from '../user/dto/create-user.dto';
 import { AuthService } from './auth.service';
-import { Public } from './decorators/public-decorator';
 import { GoogleAuthGuard } from './guards/google-auth.guard';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 import { RefreshAuthGuard } from './guards/refresh-auth.guard';
