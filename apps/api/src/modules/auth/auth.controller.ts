@@ -65,7 +65,7 @@ export class AuthController {
     const { user, accessToken, refreshToken } = response;
 
     res.redirect(
-      `http://localhost:3000/api/auth/google/callback?userId=${user.id}&name=${user.name}&email=${user.email}&accessToken=${accessToken}&refreshToken=${refreshToken}`,
+      `${process.env.FRONTEND_URL}/api/auth/google/callback?userId=${user.id}&name=${user.name}&email=${user.email}&accessToken=${accessToken}&refreshToken=${refreshToken}`,
     );
   }
 }
