@@ -40,6 +40,12 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 SESSION_SECRET_KEY=
 ```
 
+`constants.ts`
+修改一些常量 比如 `cookie` 名称等
+```ts
+export const AUTH_COOKIE = "xxxx"
+```
+
 ### prisma
 ```prisma
 
